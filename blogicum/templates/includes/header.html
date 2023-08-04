@@ -1,8 +1,8 @@
+{% load static %}
 {% with request.resolver_match.view_name as view_name %}  
  <!DOCTYPE html>
  <html lang="ru">	   
     <header>
-      {% load static %}
       <nav class="navbar navbar-light" style="background-color: lightskyblue">
         <div class="container">
           <a class="navbar-brand" href="{% url 'blog:index' %}">
