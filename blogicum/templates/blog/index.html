@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}
-  <h1>Лента записей</h1>
+  Лента записей
 {% endblock %}
 {% block content %}
+  <h1>Лента записей</h1>
     {% for post in posts %}
       <article>
         <ul>

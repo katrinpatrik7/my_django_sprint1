@@ -52,8 +52,8 @@ def index(request):
 
 
 def post_detail(request, pk):
+    template = 'blog/detail.html'
     try:
-        template = 'blog/detail.html'
         context = {'post': posts[pk]}
     except IndexError:
         raise Http404("Такого поста не существует")
